@@ -3,28 +3,28 @@
   - admin-1
   - admin-2
 - title: Lectures
-- title: 1. Game Engines Overview
+- title: 1. Module Overview
   docs:
   - intro-1  
   - intro-2
   - intro-3
-- title: 2. Rendering Engine
+- title: 2. 
   docs:
-- title: 3. Scene Graph
+- title: 3. 
   docs:
-- title: 4. Collision Detection
+- title: 4. 
   docs:
-- title: 5. Scripting
+- title: 5. 
   docs:
-- title: 6. Animation
+- title: 6. 
   docs:
-- title: 7. Sound
+- title: 7. 
   docs:
-- title: 8. Networking
+- title: 8. 
   docs:
-- title: 9. Streaming
+- title: 9. 
   docs:
-- title: 10. Memory Management/Threading
+- title: 10.
   docs:
 - title: Assessment
   docs:
