@@ -1,51 +1,42 @@
 ---
-title: Overview
+title: Module Overview
 permalink: /docs/intro-1/
 ---
 
 ## Module Outline  
 
-### Game Engine Development
+### IOS Game Development
 
-1. Module Overview & Game Engines Overview
-2. Rendering Engine
-3. Scene Graph
-4. Collision Detection
-5. Scripting
-6. Animation
-7. Sound
-8. Networking
-9. Streaming
-10. Memory Management/Threading
+1. Module Overview 
+2. Games Design & Development
+3. Mac Cloud
+4. Xcode & Swift
+5. SpriteKit - Sprites, Backgrounds, Animations, Sounds
+6. Model-View-Controller & Event Driven Programming
+8. Physics & Collision
 
 ## Assessment
 
-1. A One Page game description/promo/elevator pitch for your game [10%]
-2. A Game developed using a game engine [40%]
-3. An essay describing the use of the game engine for your game [50%]
+1. A One Page game description/promo/elevator pitch for your game [20%]
+2. A Game developed using a game engine [60%]
+3. An essay describing the use of the game engine for your game [20%]
 
 
 ## Introduction
 
-In a nutshell, this module explores a number of different software component commonly found within 3d game engines. The module will also provide you with an opportunity to develop a game using a game engine.   
-
-The module aims to:
-* Improve your understanding of game engines
-* Improve your game development skills
+This module will provide students with the space to learn, explore and absorb the core concepts, principles and techniques of creating games for apple mobile devices. The module will guide students through the core principles of programming in apple specific languages. Starting with an introduction to the apple programming environment, the module will progress delving into the various specifics of apples games related frameworks and languages. The aim is to provide a comprehensive introduction to games programming for iOS enabled devices.
 
 ## Learning Outcomes
 
-1. Apply appropriate concepts, principles and approaches to games engine development;
-2. Critically evaluate different approaches to game engine development using appropriate techniques
-3. Effectively communicate a systematic understanding of the core principles of Game Engine development
+1. Demonstrate and effectively communicate a systematic understanding of programming for iOS devices. 
+2. Conceptualise and develop an iOS based game with due diligence to legal and ethical concerns. 
+3. Design, develop and evaluate an iOS game.
+4. Effectively communicate the conceptual and practical working processes and underpinning theories of the project using appropriate media. 
+
 
 ## Recommended Reading
 
-* *Game Engine Architecture 3rd Edition*,  Gregory, Jason. CRC Press, 2018
-* *Real-Time Collision Detection*, Ericson Christer, CRC Press 2004
-* *Game Physics Engine Development* Millington, Ian. CRC Press 2010
-* *Computational Beauty of Nature* Flake, Gary. MIT Press 1998
-* *Mathematics for 3D Game Programming and Computer Graphics* Lengyel, Eric. Charles River Media, 2003
+
 
 
 
