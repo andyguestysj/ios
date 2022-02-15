@@ -17,9 +17,8 @@ permalink: /docs/intro-1/
 
 ## Assessment
 
-1. A One Page game description/promo/elevator pitch for your game [20%]
-2. A Game developed using a game engine [60%]
-3. An essay describing the use of the game engine for your game [20%]
+1. A One Page game description/promo/elevator pitch for your game [25%]
+2. An IOS Game [75%]
 
 
 ## Introduction
