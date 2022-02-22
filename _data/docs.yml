@@ -10,12 +10,29 @@
   - intro-3
   - intro-4
   - intro-5
-- title: 2. 
+- title: 2. Games Development
   docs:
-- title: 3. 
+  - gamedev-0
+  - gamedev-1
+  - gamedev-2
+  - gamedev-3
+  - gamedev-4
+  - gamedev-5
+- title: 3. Games Vocabulary
   docs:
-- title: 4. 
+  - vocab-0
+  - vocab-1
+  - vocab-2
+  - vocab-3
+  - vocab-4
+- title: 4. Frameworks
   docs:
+  - framew-0
+  - framew-1
+  - framew-2
+  - framew-3
+  - framew-4
+  - framew-5
 - title: 5. 
   docs:
 - title: 6. 
