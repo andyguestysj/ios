@@ -30,4 +30,11 @@ The left hand side of this window is the browser, it defaults to the files in th
 The right hand side shows details about the currently selected file.  
 The central area shows the content of the file.  
 
-This
+This process has created the SpriteKit equivalent of the `Hello World` program. You can run it by pressing the play button at the top of the left hand-side of the window. It will take a little while to start up and will be a little clunky. The simulator isn't the smoothest running software and using it on a remote desktop makes things worse.  
+
+### SpriteKit Basics
+
+Sprites are animated textured images. SpriteKit works by using, manipulating and interacting with sprites.  
+
+SpriteKit is an extension to the Swift programming language. Swift is an object oriented language, as is SpriteKit.  
+
