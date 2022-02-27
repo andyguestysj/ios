@@ -3,7 +3,7 @@ title: New Game
 permalink: /docs/spritekit-1/
 ---
 
-### Creating A SpriteKit project in Xcode1
+### Creating A SpriteKit project in Xcode
 
 Apparently the `Game` option in Xcode is out of date so, to create a new game project you should create a Swift/SwiftUI project as described below.  
 
@@ -31,7 +31,7 @@ The left hand side of this window is the browser, it defaults to the files in th
 The right hand side shows details about the currently selected file.  
 The central area shows the content of the file on the left and a preview on the right. The preview will start paused.  
 
-#### Enabling SpriteKit
+### Enabling SpriteKit
 
 To enable SpriteKit for this project 
 
