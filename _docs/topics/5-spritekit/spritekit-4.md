@@ -26,9 +26,9 @@ class GameScene: SKScene {
     addChild(player)
 
   }
-
-
 }
-
 ```
+
+What we've added here is a member variable to the scene called `player` which holds all the information related to the player sprite. We've changed its x position, ensured it will be displayed above the background layer and will be visible. It won't do anything, it won't move, you can't interact with it, it won't crash. We'll add those features over the next few pages.  
+
 
