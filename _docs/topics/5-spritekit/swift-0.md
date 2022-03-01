@@ -3,6 +3,8 @@ title: Swift Basics
 permalink: /docs/swift-0/
 ---
 
+SpriteKit is a games library/framework for the Swift programming language. Swift is an object oriented programming language so has a familiar structure but its syntax is different in a number of ways. This page covers the basics of the Swift syntax for a number of standard coding concepts. It doesn't go in to any depth, it assumes you know these concepts from Java (or another OOP language), it just shows the syntax.
+
 ### Variables
 
 Variables in Swift are created using the `var` keyword. The `var` keyword tells the compiler the value is a variable and can be changed (it will tell you off if you create a `var` and don't later change it!). You don't need to specify the variable type but you can if you wish.  

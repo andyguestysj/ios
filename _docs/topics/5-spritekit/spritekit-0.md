@@ -8,6 +8,7 @@ permalink: /docs/spritekit-0/
 * Setting Up A New Game Project
 * Scenes & Nodes
 * Backgrounds
+* Particles
 * Sprites
 * Touchscreen
 * Obstacles
