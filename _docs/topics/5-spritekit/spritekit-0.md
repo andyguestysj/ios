@@ -13,5 +13,10 @@ permalink: /docs/spritekit-0/
 * Touchscreen
 * Obstacles
 * Collisions
+
+Next week we'll look at making the game a bit nicer with
+
 * Score Display
-* Tidying Up
+* Something better than simply removing the player sprite
+* Ending/Restarting the game
+* Tidying Up/Fixing Bugs

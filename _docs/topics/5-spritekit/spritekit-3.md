@@ -19,5 +19,12 @@ The `zPosition` indicates the level the image is on, the greater the number the 
 
 If you download the [assets.zip](https://moodle.yorksj.ac.uk/mod/resource/view.php?id=1169361) file from moodle you'll find an image called `road@2x.jpg` in it you can use to create a dirt road background. (The @x2 tells SpriteKit to display at x 2 resolution, the standard resolution for iPads). Download the zip file, extract the images and drag them to the `Assets` folder in your Xcode project.   
 
-x
+Add the following to your `GameSceen`  
+
+```swift
+let background = SKSpriteNode(imageNamed: "road.jpg")
+background.zPosition = -1
+addChild(background)
+```
+
 
