@@ -1,5 +1,5 @@
 ---
-title: Score Display
+title: Collisions
 permalink: /docs/spritekit-8/
 ---
 

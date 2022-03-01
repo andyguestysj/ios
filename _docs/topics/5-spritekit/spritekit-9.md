@@ -1,5 +1,5 @@
 ---
-title: Tidying Up
+title: Score Display
 permalink: /docs/spritekit-9/
 ---
 

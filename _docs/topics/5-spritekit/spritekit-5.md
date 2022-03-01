@@ -1,85 +1,34 @@
 ---
-title: Touchscreen
+title: Sprites
 permalink: /docs/spritekit-5/
 ---
 
-### Touchscreen Interaction
+### Sprites
 
-We've already added three methods to enable touchscreen interaction.  
+Making a sprite is a little more involved than adding a background image (as you'd expect). We need to be able to access the sprite throughout the Scene to update it, check for collisions, etc. To this we need to create the sprite as a member variable of our scene class. (The image used in the example is in the assets.zip file [assets.zip](https://moodle.yorksj.ac.uk/mod/resource/view.php?id=1169361)).  
+
+You would add the code as shown below.  
 
 ```swift
 class GameScene: SKScene {
 
-  override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+  // Creates the player sprite using player-motorbike.jpg
+  // Note it is a constant as player is a reference to the sprite player will not change but the contents of the sprite will
+  let player = SKSpriteNode(image: "player-motorbike.jpg")
 
-  }
+  override func didMove(to view: SKView) {
 
-  override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-
-  }
-
-  override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+    // position the player
+    player.position.x = -400
+    // lift it above the background layer
+    player.zPosition = 3
+    // attach the player sprite to the scene - adds it to the scene and displays it
+    addChild(player)
 
   }
 }
 ```
 
-It won't surprise you to discover that `touchesBegan` gets called when they player touches the screen, `touchesMoved` gets called when a touch point moves, and `touchesEnded` gets called when the touch is removed. Since iPads are multi-touch devices, we will have to examine a list of touches to see what has happened.  
+What we've added here is a member variable to the scene called `player` which holds all the information related to the player sprite. We've changed its x position, ensured it will be displayed above the background layer and will be visible. It won't do anything, it won't move, you can't interact with it, it won't crash. We'll add those features over the next few pages.  
 
-We'll start with the following code.  
 
-```swift
-class GameScene: SKScene {
-
-  // Create a boolean flag to indicate if the player is touching the player sprite
-  var touchingPlayer = false  
-
-  override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-      // first we check to see if any new touches have been detected
-      // if none have been detected we exit the method
-      guard let touch = touches.first else { return }
-
-      // next we get the location of the touch
-      let location = touch.location(in: self)
-
-      // next we get a list of all nodes (objects attached directly to the scene) at that location
-      let tappedNodes = nodes(at: location)
-
-      // now we check if the player sprite is one of the nodes at the location
-      if tappedNodes.contains(player) {
-          // if the player sprite is at the location then set touchingPlyer to true
-          touchingPlayer = true
-      }
-
-  }
-}
-```
-
-The code in `touchesBegan` first checks to see if there have been any touches, then uses the location of the touch to identify any nodes that are directly attached to the scene at that location and then checks to see if any of those nodes is the player node.  
-
-It doesn't actually mode the player sprite though. To do that we can add some code to `touchesMoved`.  
-
-```swift
-class GameScene: SKScene {
-
-  override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-      // first we check if the player sprite is currently being touched, if it isn't we just exit the method
-      guard touchingPlayer else { return }
-
-      // next we check to see if any moving touches have been detected
-      // if none have been detected we exit the method
-      guard let touch = touches.first else { return }
-
-      // now we know the player sprite and the screen are being touched at the same time
-      // we get the position of the touch
-      let location = touch.location(in: self)
-      // then we move the player sprite to that location
-      player.position = location
-  }
-
-  override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-      // we also need to release the player sprite when the touch ends
-      touchingPlayer = false
-  }
-}
-```

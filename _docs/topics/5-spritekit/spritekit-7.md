@@ -1,7 +1,7 @@
 ---
-title: Collisions
+title: Obstacles
 permalink: /docs/spritekit-7/
 ---
 
-### Collisions
+### Obstacles
 
