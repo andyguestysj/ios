@@ -66,20 +66,20 @@ Change `struct ContentView: View` as follows
 
 ```swift
 struct ContentView: View {
-  
   var scene: SKScene {
-    let scene = GameScene()
-    scene.size = CGSize(width: 300, height: 400)
+    let scene = GameScene(size: UIScreen.main.bounds.size)    
     scene.scaleMode = .fill
     return scene
   }
 
   var body: some View {
     SpriteView(scene: scene)
-      .frame(width: 300, height: 400)
+          .frame(width: scene.size.width, height: scene.size.height)
   }
 }
 ```
+
+We get the size of the screen and use that to create a scene that fills the screen.  
 
 The `var scene` section sets up the scene to the specified size. The `scene.scaleMode = .fill` ensures the scene will scale properly when resized.  
 THe `var body` section simply starts the scene at the specified size.  

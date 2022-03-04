@@ -9,22 +9,24 @@ Making a sprite is a little more involved than adding a background image (as you
 
 You would add the code as shown below.  
 
+We use spriteScale to scale the size of the player sprite (and later the obstacles). You can change this figure if the sprites are to small or big on your screen. 
+
 ```swift
 class GameScene: SKScene {
 
   // Creates the player sprite using player-motorbike.jpg
   // Note it is a constant as player is a reference to the sprite player will not change but the contents of the sprite will
   let player = SKSpriteNode(image: "player-motorbike.jpg")
+  let spriteScale = 0.75
 
   override func didMove(to view: SKView) {
-
-    // position the player
-    player.position.x = -400
+    player.position.x = 40
+    player.position.y = self.frame.size.height/2
     // lift it above the background layer
-    player.zPosition = 3
+    player.zPosition = 1
+    player.setScale(spriteScale)
     // attach the player sprite to the scene - adds it to the scene and displays it
     addChild(player)
-
   }
 }
 ```

@@ -13,23 +13,25 @@ The function below creates a car obstacle off screen (to the right) at a random 
 
 ```swift
 func createObstacle(){
-    // create a random number generator that generators integers within a range
-    let randomDistribution = GKRandomDistribution(lowestValue: -350, highestValue:350)
-    let sprite = SKSpriteNode(imageNamed: "car")
+  // create a random number generator that generators integers within a range
+  let randomDistribution = GKRandomDistribution(lowestValue: 50, highestValue: Int((self.frame.self.height - 50)))
+  let sprite = SKSpriteNode(imageNamed: "car")
+  let carX = Int((self.frame.size.width + 100))
 
-    sprite.posiiton = CGPoint(x: 1200, y: randomDistribution.nextInt())
-    // give the sprite a name so we can identify it (used for collision detection)
-    sprite.name = "enemy"
-    // set the zPosition so it is above the background layer
-    sprite.zPosition = 1
-    addChild(sprite)
-
-    // Give the sprite a physics body.
-    // We use this to give it a velocity so that it will automatically move to the left
-    // (and we'll use it later to detect collisions)
-    sprite.physicsBody = SKPhysicsBody(texture: sprite.texture!, size: sprite.size)
-    sprite.physicsBody?.velocity = CGVector(dx: -500, dy: 0)
-    sprite.physicsBody?.linearDamping = 0
+  sprite.position = CGPoint(x: carX, y: randomDistribution.nextInt())
+  // give the sprite a name so we can identify it (used for collision detection)
+  sprite.name = "enemy"
+  // set the zPosition so it is above the background layer
+  sprite.zPosition = 1
+  sprite.setScale(spriteScale)
+  addChild(sprite)
+  // Give the sprite a physics body.
+  // We use this to give it a velocity so that it will automatically move to the left
+  // (and we'll use it later to detect collisions)
+  sprite.physicsBody = SKPhysicsBody(texture: sprite.texture!, size: sprite.size)
+  sprite.physicsBody?.velocity = CGVector(dx: -500, dy: 0)
+  sprite.physicsBody?.affectedByGravity = false
+  sprite.physicsBody?.linearDamping = 0
 }
 ```
 
@@ -40,12 +42,13 @@ class GameScene: SKScene {
 
     // create gameTimer to hold a timer
     var gameTimer: Timer?
+    let newObstacleRepeatTime = 0.2
 
     override func didMove(to view: SKView) {
 
         // attach a scheduled timer to gameTimer
         // this will trigger every 0.35 seconds and call createEnemy
-        gameTimer = Timer.scheduledTimer(timeInterval: 0.35, target: self, selector: #selector(createEnemy)), userInfo: nil, repeats: true)
+        gameTimer = Timer.scheduledTimer(timeInterval: newObstacleRepeatTime, target: self, selector: #selector(createObstacle)), userInfo: nil, repeats: true)
     }
 }
 ```

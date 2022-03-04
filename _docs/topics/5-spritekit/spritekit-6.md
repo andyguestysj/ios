@@ -74,7 +74,7 @@ class GameScene: SKScene {
       // we get the position of the touch
       let location = touch.location(in: self)
       // then we move the player sprite to that location
-      player.position = location
+      player.position.y = location.y
   }
 
   override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {

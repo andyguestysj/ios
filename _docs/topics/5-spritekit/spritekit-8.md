@@ -24,7 +24,7 @@ Next we have to give the player sprite a physics body.
 player.physicsBody = SKPhysicsBody(texture: player.texture!, size: player.size)
 // give the physics body a bit mask that can be used to identify the player sprite
 player.physicsBody?.categoryBitMask = 1
-
+player.physicsBody?.affectedByGravity = false
 // turn on the collision detection and tell the scene to handle collisions
 physicsWorld.contactDelegate = self
 ```

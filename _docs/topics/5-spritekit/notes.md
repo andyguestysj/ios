@@ -1,10 +1,3 @@
----
-title: Full Game
-permalink: /docs/spritekit-9/
----
-
-### Full Game (so far)
-
 ```swift
 //
 //  ContentView.swift

@@ -22,7 +22,7 @@ This background is pretty dull and completely static. We can create the illusion
    8. Change the `Alpha Start to 0.2` and the `Alpha Range to 0.2`
    9. Click the white colour circle next to the colour ramp so we can set an appropriate colour
    10. Click the crayon icon at the top right of the pop up screen (see image below) and select the brown crayon.
-   11. Return to the particle attributes and set the `Color Blen Range to 0.3` so we get a range of shades
+   11. Return to the particle attributes and set the `Color Blend Range to 0.3` so we get a range of shades
 6. Return to the `GameScene` code
 
 **Particle Attributes** 
@@ -45,12 +45,16 @@ Crayon color selector.
 
 ### GameScene code
 
+The attributes set above are a good start but if we want to be able to deal with any screen size we need to modify some figures at run time to match the screen size.  
+
 Update your `GameScene` `didMove()` method by adding the lines below immeadiately after `addChild(background)`
 
 ```swift
-if let particles = SKEmitterNode(filenNamed: "Mud") {
+if let particles = SKEmitterNode(fileNamed: "Mud") {
   particles.advanceSimulationTime(10)
-  particles.position.x = 512
+  particles.position.x = self.frame.size.width
+  particles.position.y = self.frame.size.height/2
+  particles.particlePositionRange.dy = self.frame.size.height
   addChild(particles)
 }
 ```
