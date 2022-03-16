@@ -14,9 +14,7 @@ Currently the game simply stops after the player collides with a car. Lets add s
 5. Finally we need to call `presentScene()` on our scene's view property to make the new scene display
 
 
-First rename the file `ContentView` to `GameScene` (click on the file in xcode, press F2, change name, make sure extension stays the same).  
-
-Next update `playerHit`  
+Update `playerHit` as shown below.
 
 ```swift
 func playerHit(_ node: SKNode) {
