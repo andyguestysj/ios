@@ -19,7 +19,7 @@ permalink: /docs/sk-4/
 * Less memory consumption 
 * Minimizes disk I/O 
 * Speed up render speed
+* Can be used to store stages of an animation cycle for sprites
 
-### Creating A Texture Atlas
 
-### Using A Texture Atlas
+
