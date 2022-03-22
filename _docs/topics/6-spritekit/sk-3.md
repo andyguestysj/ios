@@ -1,6 +1,6 @@
 ---
 title: Physics Engine 
-permalink: /docs/sk-03/
+permalink: /docs/sk-3/
 ---
 
 ### Physics Simulation

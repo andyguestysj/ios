@@ -1,6 +1,6 @@
 ---
 title: Particle System 
-permalink: /docs/sk-05/
+permalink: /docs/sk-5/
 ---
 
 ### Particles Overview 

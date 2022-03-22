@@ -1,6 +1,6 @@
 ---
 title: SKTexture 
-permalink: /docs/sk-04/
+permalink: /docs/sk-4/
 ---
 
 ### SKTexture 
