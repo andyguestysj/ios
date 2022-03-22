@@ -33,7 +33,7 @@
   - framew-3
   - framew-4
   - framew-5
-- title: 5. SpriteKit Basics
+- title: 5. SpriteKit Game
   docs:
   - swift-0
   - spritekit-0
@@ -52,9 +52,9 @@
   - spritekit-13
   - spritekit-14
   - spritekit-15
-- title: 6. Animated Sprites
+- title: 6. SpriteKit Overview
   docs:
-  #- sprites-0
+  - sk-0
 - title: 7. 
   docs:
 - title: 8. 
