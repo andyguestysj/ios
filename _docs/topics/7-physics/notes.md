@@ -1,0 +1,13 @@
+* [https://blog.devgenius.io/spritekit-physics-c8849475c21](https://blog.devgenius.io/spritekit-physics-c8849475c21)
+* [https://www.hackingwithswift.com/read/36/5/pixel-perfect-physics-in-spritekit-plus-explosions-and-more](https://www.hackingwithswift.com/read/36/5/pixel-perfect-physics-in-spritekit-plus-explosions-and-more)
+* [https://www.hackingwithswift.com/read/36/7/optimizing-spritekit-physics](https://www.hackingwithswift.com/read/36/7/optimizing-spritekit-physics)
+* [https://www.raywenderlich.com/5347797-how-to-make-a-game-like-cut-the-rope-with-spritekit](https://www.raywenderlich.com/5347797-how-to-make-a-game-like-cut-the-rope-with-spritekit)
+* [https://makeschool.org/mediabook/oa/tutorials/build-hoppy-bunny-with-spritekit-in-swift/getting-started-H6c=/](https://makeschool.org/mediabook/oa/tutorials/build-hoppy-bunny-with-spritekit-in-swift/getting-started-H6c=/)
+* [https://beckyhansmeyer.com/tag/spritekit/](https://beckyhansmeyer.com/tag/spritekit/)
+* [https://app-o-mat.com/article/sprite-kit/physics-body](https://app-o-mat.com/article/sprite-kit/physics-body)
+* [https://riptutorial.com/sprite-kit](https://riptutorial.com/sprite-kit)
+* [https://iosexample.com/a-simple-game-application-using-spritekit-physics-blend-modes-radians-and-cgfloat/](https://iosexample.com/a-simple-game-application-using-spritekit-physics-blend-modes-radians-and-cgfloat/)
+* [https://bignerdranch.com/blog/using-spritekit-to-create-engagement-and-turn-your-users-into-participants/](https://bignerdranch.com/blog/using-spritekit-to-create-engagement-and-turn-your-users-into-participants/)
+* [https://www.andrew.cmu.edu/course/98-222/lectures.html](https://www.andrew.cmu.edu/course/98-222/lectures.html)
+* [https://microeducate.tech/spritekit-physics-joints-corrupt-for-moving-scene/](https://microeducate.tech/spritekit-physics-joints-corrupt-for-moving-scene/)
+* 
