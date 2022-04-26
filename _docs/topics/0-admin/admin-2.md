@@ -21,7 +21,7 @@ If there are any contradictions between Moodle and other sources the Moodle info
 
 ## Website
 
-The content for the module will be provided through the Programming 02 webpage [https://ysjged.netlify.app/](https://ysjged.netlify.app/). Moodle isn't suitable for presenting the information, videos and tutorials required. There is a link to the webpage on Moodle.
+The content for the module will be provided through the IOS Games webpage [https://ysjiosgames.netlify.app/](https://ysjiosgames.netlify.app/). Moodle isn't suitable for presenting the information, videos and tutorials required. There is a link to the webpage on Moodle.
 
 ## eMail
 
