@@ -64,8 +64,10 @@
 - title: 7. Physics Contacts & Collisions
   docs:
   - coll-0
-- title: 8. 
+- title: 8. More Physics
   docs:
+  - phys-0
+  - phys-1
 - title: 9. 
   docs:
 - title: 10.
